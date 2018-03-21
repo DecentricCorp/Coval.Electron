@@ -2,12 +2,12 @@
 
 ### Prerequisites
 ```
-npm install
 npm install electron-installer-dmg -g
 npm install electron-packager -g
-git checkout https://github.com/DecentricCorp/Coval.Electron.git
+git clone https://github.com/DecentricCorp/Coval.Electron.git
 cd Coval.Electron
-git checkout https://github.com/DecentricCorp/Coval.Client.git app
+git clone https://github.com/DecentricCorp/Coval.Client.git app
+npm install
 ```
 
 ### Build .app and Installer for OSX
