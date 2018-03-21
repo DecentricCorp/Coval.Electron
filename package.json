@@ -1,0 +1,36 @@
+{
+  "name": "covalalphaclient",
+  "productName": "Coval Alpha Client",
+  "version": "1.0.0",
+  "description": "Packaged client for desktop usage",
+  "main": "main.js",
+  "repository": "https://github.com/DecentricCorp/Coval.Electron",
+  "author": "Shannon Code <genecyber@mail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.8.2",
+    "electron-auto-updater": "0.6.2",
+    "electron-builder": "10.5.0",
+    "electron-packager": "^11.1.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --asar --platform=darwin --arch=x64 --prune=true --out=release-builds",
+    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --prune=true --out=release-builds",
+    "package-win": "electron-packager . --overwrite --asar --platform=win32 --arch=x64 --prune=true --out=release-builds"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "bootstrap": "^4.0.0-beta.3",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9",
+    "startbootstrap-simple-sidebar": "^4.0.0",
+    "tether": "^1.4.0",
+    "electron-auto-updater": "0.6.2"
+  },
+  "standard": {
+    "globals": [
+      "$"
+    ]
+  }
+}

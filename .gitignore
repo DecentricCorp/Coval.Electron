@@ -1,0 +1,6 @@
+node_modules
+.vscode
+myaddresses.txt
+release-builds
+dist
+.DS_Store
