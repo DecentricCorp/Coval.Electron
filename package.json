@@ -18,8 +18,8 @@
     "start": "electron .",
     "dist-mac": "npm run package-mac; npm run installer-mac",
     "installer-mac": "electron-installer-dmg ./release-builds/Coval-Alpha-Client-darwin-x64/Coval-Alpha-Client.app/ Coval-Alpha-Client --out=./release-builds/ --overwrite",
-    "package-mac": "electron-packager . --overwrite --asar --platform=darwin --arch=x64 --prune=true --out=release-builds",
-    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --prune=true --out=release-builds",
+    "package-mac": "electron-packager . --overwrite --asar --platform=darwin --arch=x64 --prune=true --out=release-builds --icon=assets/icons/mac/icon.icns",
+    "package-linux": "electron-packager . --overwrite --asar --platform=linux --arch=x64 --prune=true --out=release-builds --icon=assets/icons/png/1024x1024.png",
     "package-win": "electron-packager . --overwrite --asar --platform=win32 --arch=x64 --prune=true --out=release-builds"
   },
   "dependencies": {

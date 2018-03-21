@@ -10,19 +10,17 @@ const BrowserWindow = electron.BrowserWindow
 
 app.setName(config.productName)
 
-
-
-
 var mainWindow = null
 app.on('ready', function () {
   mainWindow = new BrowserWindow({
     title: config.productName,
-backgroundColor: '#312450',
+    backgroundColor: '#312450',
     webPreferences: {
       nodeIntegration: true,
       defaultEncoding: 'UTF-8'
-    }
-  })
+    },
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+  });
 
   mainWindow.loadURL(`file://${__dirname}/app/index.html`)
 
